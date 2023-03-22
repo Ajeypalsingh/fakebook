@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <meta name="author" content=" Ajaypal singh" />
+    <meta name="description" content="My web page" />
+    <meta name="keywords" content="html, css, web development, seo" />
+
+    <title>Fakebook</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" media="all" />
+    <script src="./assets/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <header>
+      <h1>Fakebook</h1>
+      <nav>
+        <ul>
+          <li>Friends</li>
+          <li>Pages</li>
+          <li>Groups</li>
+          <li>My ads</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <img src="./assets/images/profile.jpg" />
+        <div id="profile" class="modal hidden"></div>
+      </div>
+    </header>
+    <main class="container">
+      <form class="post">
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+          placeholder="What's up Dude!"
+        ></textarea>
+        <div class="select-image">
+          <div class="selector">
+            <div class="save">
+              <img
+                onclick="document.getElementById('image').click();"
+                class="selected-image"
+                src="./assets/images/image-icon.png"
+              />
+            </div>
+            <input type="file" id="image" style="visibility: hidden" />
+          </div>
+          <button>Post</button>
+        </div>
+      </form>
+      <div class="new-post"></div>
+    </main>
+  </body>
+</html>

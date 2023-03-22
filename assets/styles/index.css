@@ -1,0 +1,195 @@
+@import "./reset.css";
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+body {
+  background-color: #151821;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2229;
+  height: 60px;
+  padding: 0 80px;
+}
+
+header h1 {
+  color: #3d9cfb;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav {
+  width: 40%;
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  font-size: 19px;
+  justify-content: center;
+}
+
+header nav ul li + li {
+  margin-left: 20px;
+}
+
+header .profile {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .profile img {
+  border-radius: 50%;
+}
+
+main {
+  margin-top: 50px;
+}
+
+form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f232b;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.new-post {
+  margin: 20px auto;
+  width: 60%;
+}
+
+textarea {
+  width: 100%;
+  color: #7a7b7f;
+  background: transparent;
+  resize: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+form .select-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .new-post .content {
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+main .new-post .content .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .new-post .content .user .user-name {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+main .new-post .content .username {
+  font-weight: bold;
+  font-size: 18px;
+  width: 20%;
+}
+
+main .new-post .content .user img {
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+main .new-post .content .user {
+  width: 100%;
+}
+
+main .new-post .content .media img {
+  margin: 0 auto;
+  width: 100%;
+  height: 50%;
+}
+
+main .new-post .content .caption {
+  margin: 20px 0;
+}
+main .selector {
+  margin-left: 20px;
+}
+main .selector img {
+  width: 10%;
+}
+
+form button {
+  margin: 0 25px 10px 0;
+  background-color: #178afd;
+  outline: transparent;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 70px;
+  height: 30px;
+}
+.saver {
+  color: #7a7b7f;
+  display: flex;
+}
+.save img {
+  margin-right: 10px;
+}
+
+.user-profile {
+  display: grid;
+  place-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.margin {
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 200px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
